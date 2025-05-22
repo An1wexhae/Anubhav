@@ -2,138 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anubhav Singh Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anubhav Singh Portfolio Embed</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
       color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: url('https://via.placeholder.com/1600x800') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.3rem;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
     }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #111;
-    }
-    .about, .skills, .projects, .contact {
-      background-color: white;
-      margin-bottom: 40px;
+    .embed-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      box-shadow: 0 2px 8px rgba(63,69,81,0.16);
+      margin: 1.6em 0 0.9em 0;
+      overflow: hidden;
       border-radius: 8px;
-      padding: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      will-change: transform;
     }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 20px;
+    .embed-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
     }
-    .skill {
-      background-color: #e0f7fa;
-      padding: 15px;
-      text-align: center;
-      border-radius: 6px;
+    a.portfolio-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0073e6;
+      text-decoration: none;
       font-weight: bold;
     }
-    .project {
-      background-color: #fce4ec;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 6px;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    form button {
-      background-color: #00796b;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    form button:hover {
-      background-color: #004d40;
+    a.portfolio-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Anubhav Singh</h1>
-    <p>Developer • Designer • Creator</p>
-  </header>
+  <h1>Anubhav Singh Portfolio</h1>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Anubhav, a passionate developer and digital creator with a flair for minimalist design and practical user experiences. I love building websites that look good and perform better.</p>
-  </section>
+  <div class="embed-container">
+    <iframe loading="lazy"
+      src="https://www.canva.com/design/DAGh6hJagKo/Y8crLnJLCAYTKm133dpCKQ/watch?embed"
+      allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+  </div>
 
-  <section class="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">React</div>
-      <div class="skill">Figma</div>
-      <div class="skill">UI/UX</div>
-    </div>
-  </section>
-
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>A fully responsive portfolio built with HTML, CSS, and JS.</p>
-    </div>
-    <div class="project">
-      <h3>Weather App</h3>
-      <p>A React app that shows real-time weather using open APIs.</p>
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+  <a href="https://www.canva.com/design/DAGh6hJagKo/Y8crLnJLCAYTKm133dpCKQ/watch?utm_content=DAGh6hJagKo&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+     target="_blank" rel="noopener" class="portfolio-link">
+    anubhav singh portfolio by ANUBHAV SINGH
+  </a>
 
 </body>
 </html>
